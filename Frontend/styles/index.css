@@ -1,0 +1,91 @@
+/*Import the Overpass font family */
+@font-face {
+  font-family: "Overpass";
+  src: url(https://fonts.gstatic.com/s/overpass/v12/qFda35WCmI96Ajtm83upeyoaX6QPnlo6_PPbPpqK.woff2);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(164, 54, 84);
+  overflow: hidden;
+}
+a {
+  text-decoration: none;
+}
+#navbar > i {
+  cursor: pointer;
+}
+.navItem {
+  display: block;
+  font-family: Overpass;
+  color: white;
+  font-size: large;
+  height: 25px;
+}
+.navItem:not(:nth-child(3)) {
+  margin-right: 7%;
+}
+.fa-shopping-cart {
+  color: white;
+}
+#navbar {
+  justify-content: center;
+  width: 100vw;
+  padding-top: 50px;
+  display: flex;
+}
+/*Note: needs the other font family */
+.firmName {
+  width: 25%;
+  display: grid;
+  justify-items: center;
+  color: white;
+  cursor: default;
+}
+.firmName > p:nth-child(1) {
+  font-size: 3em;
+  font-weight: bold;
+}
+.firmName > p:nth-child(2) {
+  font-size: 2em;
+  margin-left: 40%;
+}
+#pizzaImage {
+  width: 100vw;
+  height: 90vh;
+}
+#featuredPizza {
+  z-index: 1;
+  position: absolute;
+  top: 30%;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+/*Note: needs the other font family*/
+#featuredPizza > p {
+  color: white;
+  font-size: 10vw;
+  font-size-adjust: 0.65;
+}
+#featuredPizza > div {
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+#featuredPizza > div > i {
+  margin: 0;
+  scale: 5;
+  color: #d46a97;
+  cursor: pointer;
+}
+.active {
+  border-width: 3px;
+  border-color: #d46a97;
+  border-bottom-style: solid;
+}

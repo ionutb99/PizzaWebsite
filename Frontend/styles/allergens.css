@@ -1,0 +1,104 @@
+body {
+  background-color: #a43654;
+  overflow-y: auto;
+}
+
+#listAll {
+    width: 220px;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px 20px 20px 40px;
+    font-size: 15px;
+    text-align: center;
+    background-color: #3b1928;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    text-align: left;
+    margin-left: 30px;
+
+}
+
+#principalDiv {
+    margin-left: 30px;
+}
+
+#li1, #li2, #li3, #li4, #li5, #li6, #li7, #li8, #li9, #li10, #li11, #li12, #li13, #li14 {
+    list-style:circle;
+}
+
+#allergenButtons0, #allergenButtons1, #allergenButtons2, #allergenButtons3, #allergenButtons4, #allergenButtons5, #allergenButtons6, #allergenButtons7, #allergenButtons8, #allergenButtons9, #allergenButtons10, #allergenButtons11, #allergenButtons12, #allergenButtons13, #allergenButtons14 {
+    background-color: #3b1928;
+    text-align: center;
+    margin: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 15px;
+    border-color: #762146;
+}
+
+#allergensDiv {
+    display: grid;
+    padding: 10px;
+    margin-top: 25px;
+    /* width: 100vw; */
+    grid-gap: 60px;
+}
+
+#image0, #image1, #image2, #image3, #image4, #image5, #image6, #image7, #image8, #image9, #image10, #image11, #image12, #image13, #image14 {
+  /* margin: 20px 10px 20px 10px; */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  width: 80px;
+  height: 75px;
+}
+
+@media (min-width: 110px) {
+ 
+  #allergensDiv {
+  grid-template-columns: repeat(1, 1fr); 
+  }
+}
+
+@media (min-width: 300px) {
+  
+  #allergensDiv {
+  grid-template-columns: repeat(2, 1fr); 
+  }
+}
+
+@media (min-width: 600px) {
+ 
+  #allergensDiv {
+  grid-template-columns: repeat(3, 1fr); 
+  }
+}
+
+@media (min-width: 768px) {
+  /* For screen widths 768px and above */
+  #allergensDiv {
+  grid-template-columns: repeat(4, 1fr); 
+  }
+}
+
+@media (min-width: 1024px) {
+  /* For screen widths 1024px and above */
+  #allergensDiv {
+  grid-template-columns: repeat(5, 1fr); 
+  }
+}
+
+@media (min-width: 1280px) {
+  /* For screen widths 1280px and above */
+  #allergensDiv {
+  grid-template-columns: repeat(6, 1fr); 
+  }
+}
+
+@media (min-width: 1440px) {
+  /* For screen widths 1440px and above */
+  #allergensDiv {
+  grid-template-columns: repeat(7, 1fr); /* 7 columns */
+  }
+}
+

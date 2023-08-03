@@ -1,0 +1,193 @@
+body {
+    background-color: #310d1e;
+    overflow-y: auto;
+}
+
+#filterSelect {
+    position: absolute;
+    width: 20%;
+    top: 10px;
+}
+
+.pizzaList {
+    text-align:center;
+    top: 300px;
+    position: absolute;
+    color: #ffffff;
+    margin-top: 0px;
+    margin-left: 40px;
+    list-style-type: none;
+
+} 
+
+.ulData {
+    line-height: 40px;
+    text-align:left ;
+   
+}
+#mainRoot {
+    display: grid;
+    padding: 10px;
+    margin-top: 25px;
+    /* width: 100vw; */
+    grid-gap: 30px;
+
+}
+
+.gridItem {
+    /* display: inline-block; */
+    width: 220px;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    font-size: 15px;
+    text-align: center;
+    background-color: #3b1928;
+}
+
+.gridItem > * {
+    margin: 10px;
+
+}
+
+
+
+#image0, #image1, #image2, #image3, #image4, #image5, #image6, #image7, #image8, #image9, #image10, #image11, #image12, #image13, #image14 {
+    margin: -50px -20px -20px -20px;   
+    width: 80px;
+    height: 75px;
+}
+
+#image10 {
+    width: 90px;
+    height: 90px;
+}
+
+#image3, #image4, #image5, #image6, #image7, #image8, #image11, #image14{
+    width: 70px;
+    height: 70px;
+}
+
+#menu0, #menu1, #menu2, #menu3, #menu4, #menu5, #menu6, #menu7, #menu8, #menu9, #menu10, #menu11, #menu12, #menu13, #menu14{
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+}
+#priceDiv0, #priceDiv1, #priceDiv2, #priceDiv3, #priceDiv4, #priceDiv5, #priceDiv6, #priceDiv7, #priceDiv8, #priceDiv9, #priceDiv10, #priceDiv11, #priceDiv12, #priceDiv13, #priceDiv14 {
+    text-align: left;
+    width: 85px;
+    display: inline;
+    margin-right: 35px;
+}
+
+#menu0:hover, #menu1:hover, #menu2:hover, #menu3:hover, #menu4:hover, #menu5:hover, #menu6:hover, #menu7:hover, #menu8:hover, #menu9:hover, #menu10:hover, #menu11:hover, #menu12:hover, #menu13:hover, #menu14:hover{
+    background-color: #d46a97;
+    transform: translate(0, -10px);
+}
+
+#pizzaName0, #pizzaName1, #pizzaName2, #pizzaName3, #pizzaName4, #pizzaName5, #pizzaName6, #pizzaName7, #pizzaName8, #pizzaName9, #pizzaName10, #pizzaName11, #pizzaName12, #pizzaName13, #pizzaName14{
+    text-decoration: underline;
+    text-decoration-color:#762146;
+}
+
+#pizzaDetails1, #pizzaDetails2, #pizzaDetails3, #pizzaDetails4, #pizzaDetails5, #pizzaDetails6, #pizzaDetails7, #pizzaDetails8, #pizzaDetails9, #pizzaDetails10, #pizzaDetails11, #pizzaDetails12, #pizzaDetails13, #pizzaDetails14{
+   /* overflow text */
+   text-shadow: none;
+}    
+
+#buttonOrder0, #buttonOrder1, #buttonOrder2, #buttonOrder3,#buttonOrder4, #buttonOrder5, #buttonOrder6, #buttonOrder7, #buttonOrder8, #buttonOrder9, #buttonOrder10,#buttonOrder11, #buttonOrder12, #buttonOrder13, #buttonOrder14{
+    width: 120px;
+    height: 30px;
+    background-color: #d46a97;
+    border-radius: 20px;
+    border-color:#762146;
+    margin-top: 20px;
+} 
+#buttonOrder0:hover, #buttonOrder1:hover, #buttonOrder2:hover, #buttonOrder3:hover,#buttonOrder4:hover, #buttonOrder5:hover, #buttonOrder6:hover, #buttonOrder7:hover, #buttonOrder8:hover, #buttonOrder9:hover, #buttonOrder10:hover,#buttonOrder11:hover, #buttonOrder12:hover, #buttonOrder13:hover, #buttonOrder14:hover{
+    background-color: #faadcd;
+    
+}
+
+.quantity-control0, .quantity-control1 ,.quantity-control2, .quantity-control3, .quantity-control4, .quantity-control5, .quantity-control6, .quantity-control7, .quantity-control8, .quantity-control9 ,.quantity-control10 ,.quantity-control11 ,.quantity-control12 ,.quantity-control13 ,.quantity-control14 {
+    width: 50px;
+    display: inline;
+}
+.quantity-input0, .quantity-input1, .quantity-input2, .quantity-input3, .quantity-input4, .quantity-input5, .quantity-input6, .quantity-input7, .quantity-input8, .quantity-input9, .quantity-input10, .quantity-input11, .quantity-input12, .quantity-input13, .quantity-input14 {
+    width: 35px;;
+}
+
+#allergenButtons0, #allergenButtons1, #allergenButtons2, #allergenButtons3, #allergenButtons4, #allergenButtons5, #allergenButtons6, #allergenButtons7, #allergenButtons8, #allergenButtons9, #allergenButtons10, #allergenButtons11, #allergenButtons12, #allergenButtons13, #allergenButtons14 {
+    background-color: #3b1928;
+    margin: 5px;
+    border-radius: 15px;
+    width: 100px;
+    border-color: #762146;
+}
+
+#allergenButtons0:hover, #allergenButtons1:hover, #allergenButtons2:hover, #allergenButtons3:hover, #allergenButtons4:hover, #allergenButtons5:hover, #allergenButtons6:hover, #allergenButtons7:hover, #allergenButtons8:hover, #allergenButtons9:hover, #allergenButtons10:hover, #allergenButtons11:hover, #allergenButtons12:hover, #allergenButtons13:hover, #allergenButtons14:hover {
+    background-color: #762146;
+}
+
+#resetPizza {
+    background-color: #692e48;
+    margin: 5px;
+    border-radius: 15px;
+    width: 100px;
+    border-color: #762146;
+}
+
+#resetPizza:hover {
+    background-color: #a51755;
+}
+
+.allAllergen {
+    text-decoration: underline;
+    text-decoration-color: #762146;
+}
+
+.hidden {
+    visibility: hidden;
+    display: none;
+}
+
+/* Responsive grid layout */
+@media (min-width: 768px) {
+    /* For screen widths 768px and above */
+    #mainRoot {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    /* For screen widths 1024px and above */
+    #mainRoot {
+      grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    }
+  }
+  
+  @media (min-width: 1280px) {
+    /* For screen widths 1280px and above */
+    #mainRoot {
+      grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    }
+  }
+  
+  @media (min-width: 1440px) {
+    /* For screen widths 1440px and above */
+    #mainRoot {
+      grid-template-columns: repeat(5, 1fr); /* 5 columns */
+    }
+  }
+
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+

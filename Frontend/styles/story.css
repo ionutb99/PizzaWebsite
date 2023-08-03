@@ -1,0 +1,30 @@
+body {
+    background-color: #a43654;
+    overflow-y: auto;
+}
+
+#bigDiv {
+    background-color: #d46a97;
+    padding: 0px 40px 15px 40px;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+#h2Element {
+    text-align: center;
+    padding: 20px;
+}
+
+#paragraphStory {
+
+}
+
+#secondDiv {
+    text-align: center; 
+    border-radius: 20px;
+}
+
+#logo {
+    margin-top: -25px;
+    width: 20%;
+}

@@ -1,0 +1,1 @@
+The underline can be modified further by either using another element or by writing a script to get the length of each element and apply the width to it accordingly

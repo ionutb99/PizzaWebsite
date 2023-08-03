@@ -1,0 +1,99 @@
+/* body {
+  background-color: #a43654;
+  overflow: auto;
+}
+.cartItem {
+  display: flex;
+  --maxHeight: 150px;
+  max-height: var(--maxHeight);
+}
+.pizzaImage {
+  max-height: 150px;
+}
+.pizzaImage > img {
+  display: block;
+  max-height: 100%;
+  max-width: var(--maxHeight);
+  object-fit: contain;
+} */
+
+    body {
+      background-color: #a43654;
+      overflow-y: auto;
+      padding: 20px;
+    }
+    .cartItem {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      padding: 10px;
+      background-color: #642737;
+      border: 1px solid #642737;
+      border-radius: 5px;
+      width: 45%;
+    }
+    .cartItem .pizzaImage {
+      width: 100px;
+      margin-right: 20px;
+    }
+    .cartItem .pizzaImage img {
+      display: block;
+      width: 100px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+    .cartItem .pizzaDetails {
+      flex: 1;
+    }
+    .cartItem .pizzaName {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    .cartItem .ingredients {
+      font-size: 14px;
+      color: #777;
+      font-weight: normal;
+    }
+    .cartItem .quantity-control {
+      display: flex;
+      align-items: center;
+      margin-top: 10px;
+    }
+    .cartItem .quantity-control button {
+      padding: 5px 10px;
+      font-size: 14px;
+      background-color: #ddd;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .cartItem .quantity-control .quantity-input {
+      padding: 5px 10px;
+      font-size: 14px;
+      width: 40px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      text-align: center;
+    }
+
+    #clientDetails input[type="text"],
+    #clientDetails input[type="email"] {
+      width: 400px;
+      margin-right: 600px;
+      padding: 10px;
+      font-size: 14px;
+      background-color: #ffb9cb;
+      border: 1px solid #642737;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+    #submitButton {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #a43654;
+      color: #fff;
+      border:color(from color srgb r g b) ;
+      border-radius: 5px;
+      cursor: pointer;
+    }
